@@ -1,0 +1,97 @@
+html {
+  font-size: 14px; /* px means "pixels": the base font size is now 10 pixels high */
+  font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google Fonts */
+  color:white;
+  background-color: blueviolet;
+
+  }
+
+body {
+  border: 1px solid black;/*may need to remove, makes noticeable space near dropdown icon if there's no header border colour*/
+  margin: auto;
+  max-width: 85%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color:aqua;
+  background-image: url("../images/bg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+main{
+  padding: 4rem; /*keeps elements from going under banner*/
+  text-align: center;
+}
+
+h1.pageheading{
+  text-align: center;
+}
+
+div.dropdown{
+position: relative;
+display: inline-block;
+}
+
+button.dropdbtn {
+  background-color: #74837c;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+div.dropdown-links{
+  display:none;
+  position: absolute;
+  background-color: #1822a5;
+  min-width: 160px;
+}
+
+div.dropdown-links a{
+color: rgb(150, 19, 19);
+padding: 12px 16px;
+text-decoration: none;
+display:block;
+}
+
+div.dropdown-links a:hover {
+background-color: #22e182;
+}
+
+div.dropdown:hover div.dropdown-links{
+display: block;
+}
+
+div.dropdown:hover button.dropdbtn{
+background-color: aqua;
+}
+
+
+nav{
+  top: 0;
+  right:0;
+  position: absolute;
+  padding: 0px 0px;
+}
+
+header{
+  top: 0;
+  position: fixed; /*If I change to sticky, will need to alter width to 100%. Absolute is fine on its own.*/
+  width: 85%;
+}
+
+footer{
+bottom: 0;
+text-align: center;
+position: fixed; /*can remove this if I want footer to remain at bottom and unseen unless I scroll, will need to adjust width to 100% if so*/
+width: 85%; /*will need to change to 100% if position is removed*/
+}
+
+header, footer {
+background-color:black;
+border: solid 1px white;
+}
