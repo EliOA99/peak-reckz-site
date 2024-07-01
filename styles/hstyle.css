@@ -1,33 +1,33 @@
 html {
-  font-size: 14px; /* px means "pixels": the base font size is now 10 pixels high */
-  font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google Fonts */
-  color:white;
-  background-color: blueviolet;
-  background-color:rgb(0, 0, 0);
-  background-image: url("../images/bg1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  }
+font-size: 14px; /* px means "pixels": the base font size is now 10 pixels high */
+font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google Fonts */
+color:white;
+background-color: blueviolet;
+background-color:rgb(0, 0, 0);
+background-image: url("../images/bg1.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+}
 
 body {
-  border: 1px solid black;/*may need to remove, makes noticeable space near dropdown icon if there's no header border colour*/
-  margin: auto;
-  max-width: 85%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-color: black;
+border: 1px solid black;/*may need to remove, makes noticeable space near dropdown icon if there's no header border colour*/
+margin: auto;
+max-width: 85%;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+background-color: black;
 }
 
 main{
-  padding: 4rem; /*keeps elements from going under heading*/
-  text-align: center;
+padding: 9rem; /*keeps elements from going under heading*/
+text-align: center;
 }
 
 h1.pageheading{
-  text-align: center;
+text-align: center;
 }
 
 div.dropdown{
@@ -35,20 +35,39 @@ position: relative;
 display: inline-block;
 }
 
-button.dropdbtn {
-  background-color: #74837c;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
+
+nav.intPLinks ul {
+padding: 0;
+list-style-type: none;
+flex: 2;
+display: flex;
+}
+
+nav.intPLinks li {
+display: inline-block;
+text-align: center;
+flex: 1;
+}
+
+nav.intPLinks li a {
+text-decoration: none;
+color: white;
+}
+
+button.dropdbtn, button.pageNav1, button.pageNav2, button.pageNav3 {
+background-color: #74837c;
+color: white;
+padding: 16px;
+font-size: 16px;
+border: none;
+cursor: pointer;
 }
 
 div.dropdown-links{
-  display:none;
-  position: absolute;
-  background-color: #1822a5;
-  min-width: 160px;
+display:none;
+position: absolute;
+background-color: #1822a5;
+ min-width: 160px;
 }
 
 div.dropdown-links a{
@@ -67,21 +86,13 @@ display: block;
 }
 
 div.dropdown:hover button.dropdbtn{
-background-color: aqua;
-}
-
-
-nav{
-  top: 0;
-  right:0;
-  position: absolute;
-  padding: 0px 0px;
+background-color: rgb(150, 52, 52);
 }
 
 header{
-  top: 0;
-  position: fixed; /*If I change to sticky, will need to alter width to 100%. Absolute is fine on its own.*/
-  width: 85%;
+top: 0;
+position: fixed; /*If I change to sticky, will need to alter width to 100%. Absolute is fine on its own.*/
+width: 85%;
 }
 
 footer{
@@ -92,5 +103,5 @@ width: 85%; /*will need to change to 100% if position is removed*/
 }
 
 header, footer {
-  background-color:black;
+background-color:black;
 }
