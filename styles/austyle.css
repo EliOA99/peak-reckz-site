@@ -98,7 +98,7 @@ div.dropdown:hover div.dropdown-links{
 display: block;
 }
 
-div.dropdown:hover button.dropdbtn{
+div.dropdown:hover a.dropdbtn{
 background-color: rgb(150, 52, 52);
 }
 
