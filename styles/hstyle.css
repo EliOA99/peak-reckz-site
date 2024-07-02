@@ -19,6 +19,7 @@ min-height: 100vh;
 display: flex;
 flex-direction: column;
 background-color: black;
+border-radius: 8px;
 }
 
 main{
@@ -41,6 +42,7 @@ padding: 0;
 list-style-type: none;
 flex: 2;
 display: flex;
+text-align: center;
 }
 
 nav.intPLinks li {
@@ -54,12 +56,24 @@ text-decoration: none;
 color: white;
 }
 
-button.dropdbtn, button.pageNav1, button.pageNav2, button.pageNav3 {
+nav.extPLinks ul {
+padding: 0;
+list-style-type: none;
+flex: 2;
+}
+
+img.fbLogo, img.igLogo, img.xLogo, img.tiktokLogo{
+height: 30px;
+width:30px;
+}
+
+a.dropdbtn, a.pageNav1, a.pageNav2, a.pageNav3 {
 background-color: #74837c;
 color: white;
-padding: 16px;
+padding: 10px;
 font-size: 16px;
 border: none;
+border-radius: 12px;
 cursor: pointer;
 }
 
@@ -93,6 +107,7 @@ header{
 top: 0;
 position: fixed; /*If I change to sticky, will need to alter width to 100%. Absolute is fine on its own.*/
 width: 85%;
+background-color: black;
 }
 
 footer{
@@ -100,8 +115,10 @@ bottom: 0;
 text-align: center;
 position: fixed; /*can remove this if I want footer to remain at bottom and unseen unless I scroll, will need to adjust width to 100% if so*/
 width: 85%; /*will need to change to 100% if position is removed*/
+background-color: red;
+color: black;
 }
 
-header, footer {
-background-color:black;
+header, footer{
+border-radius: 8px;
 }
