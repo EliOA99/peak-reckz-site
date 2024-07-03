@@ -135,7 +135,7 @@ padding: 1%;
 section{
 display: flex;
 flex-direction:row; /*aligns elements inside section (articles in this case) as rows as default*/
-flex-wrap: wrap;
+flex-wrap: wrap; /*allows articles to maintain its form as the windows size changes*/
 }
 
 header{
