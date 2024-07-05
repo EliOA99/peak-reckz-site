@@ -30,19 +30,7 @@ display: inline-block;
 
 h1.pageheading{
 text-align: center;
-}
-
-hr{
-border-color: #22e182; /*colours hr line break*/
-}
-
-a.a1, a.a2, a.a3, a.a4, a.a5, a.a6, a.a7, a.a8{
-margin-bottom: 0.5em; /*allows you to create space between articles in the specified direction of margin*/
-margin-right: 0.5em;
-}
-
-p.mangaText, p.animeText{
-text-align:justify;
+padding-bottom: 20px;
 }
 
 div.dropdown{
@@ -94,13 +82,14 @@ font-size: 16px;
 border: none;
 border-radius: 12px;
 cursor: pointer;
+text-shadow: 2px 2px 2px #000000;   
 }
 
 div.dropdown-links{
 display:none;
 position: absolute;
 background-color: #1822a5;
- min-width: 160px;
+min-width: 160px;
 }
 
 div.dropdown-links a{
@@ -116,33 +105,38 @@ background-color: #22e182;
 
 div.dropdown:hover div.dropdown-links{
 display: block;
+border-radius: 8px;
 }
 
 div.dropdown:hover a.dropdbtn{
 background-color: rgb(150, 52, 52);
 }
 
-a.a1, a.a2, a.a3, a.a4, a.a5, a.a6, a.a7, a.a8{
+img.sao, img.cbpe, img.ez, img.gtm{
+margin-top: 0.5em;
+margin-bottom: 0.5em; /*allows you to create space between articles in the specified direction of margin*/
+margin-left: 0.5em;
+margin-right: 0.5em;
+}
+
+img.sao, img.cbpe, img.ez, img.gtm{
 border-radius: 8px;
 flex: 200px; /*this is its default size, will shrink along with window to fit space available*/
 }
 
-a.a1, a.a2, a.a3, a.a4, a.a5, a.a6, a.a7, a.a8{
-background-color: rgb(121, 119, 116);
-padding: 1%;
-}
-
-a.a1{
-background-image: url("../images/gokustance.webp");
-background-size:contain;
-background-position:center; /*in case an alignment is needed*/
-background-repeat: no-repeat;
+img.sao, img.cbpe, img.ez, img.gtm{
+width: 25%;/*images will remain the same size as long as I use a percentage that can be equally divided by the same number of images I have*/
+height: auto;
+cursor: pointer;
 }
 
 section{
 display: flex;
 flex-direction:row; /*aligns elements inside section (articles in this case) as rows as default*/
 flex-wrap: wrap; /*allows articles to maintain its form as the windows size changes*/
+margin: auto;/*to center section*/
+background-color: #1822a5;
+border-radius: 8px;
 }
 
 header{
@@ -150,13 +144,15 @@ top: 0;
 position: fixed; /*If I change to sticky, will need to alter width to 100%. Absolute is fine on its own.*/
 width: 85%;
 background-color: black;
+padding-bottom: 14px;
+/*border: /*solid 1px white; in case I want to add a border colour around the header*/ 
 }
 
 footer{
 bottom: 0;
 text-align: center;
-position: fixed; /*can remove this if I want footer to remain at bottom and unseen unless I scroll, will need to adjust width to 100% if so*/
-width: 85%; /*will need to change to 100% if position is removed*/
+position: relative; /*can remove this or change to static if I want footer to remain at bottom and unseen unless I scroll, will need to adjust width to 100% if so*/
+width: 100%; /*will need to change to 100% if position is removed or changed to static*/
 background-color: red;
 color: black;
 }

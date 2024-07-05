@@ -35,7 +35,9 @@ padding-bottom: 20px;
 
 
 a.a1, a.a2, a.a3, a.a4, a.a5, a.a6, a.a7, a.a8{
+margin-top: 0.5em;
 margin-bottom: 0.5em; /*allows you to create space between articles in the specified direction of margin*/
+margin-left: 0.5em;
 margin-right: 0.5em;
 }
 
@@ -43,7 +45,6 @@ div.dropdown{
 position: relative;
 display: inline-block;
 }
-
 
 nav.intPLinks ul {
 padding: 0;
@@ -88,6 +89,7 @@ font-size: 16px;
 border: none;
 border-radius: 12px;
 cursor: pointer;
+text-shadow: 2px 2px 2px #000000;   
 }
 
 div.dropdown-links{
@@ -110,6 +112,7 @@ background-color: #22e182;
 
 div.dropdown:hover div.dropdown-links{
 display: block;
+border-radius: 8px;
 }
 
 div.dropdown:hover a.dropdbtn{
@@ -118,12 +121,41 @@ background-color: rgb(150, 52, 52);
 
 a.a1, a.a2, a.a3, a.a4, a.a5, a.a6, a.a7, a.a8{
 border-radius: 8px;
-flex: 200px; /*this is its default size, will shrink along with window to fit space available*/
+flex: 200px; /*this is its default size, will shrink along with window to fit space available, it also keeps things in perfect alignment and size*/
+text-shadow: 2px 2px 2px #000000;   
+background-color: rgb(121, 119, 116);
+padding: 40px 10px;/*used to resize background image allowing enough content to be shown*.
 }
 
-a.a1, a.a2, a.a3, a.a4, a.a5, a.a6, a.a7, a.a8{
-background-color: rgb(121, 119, 116);
-padding: 40px 10px;
+a.a1:active, a.a2:active, a.a3:active, a.a4:active, a.a5:active, a.a6:active, a.a7:active, a.a8:active{
+animation: shake 0.4s ease-out; /*animation to trigger upon click*/
+}
+
+/* Keyframes to define the animation*/
+@keyframes shake {
+    0% {
+        transform: skewX(-4deg);/*first shake measurement to the left*/
+    }
+
+    25% {
+        transform: skewX(4deg);/*second shake measurement to the right*/
+    }
+
+    50% {
+        transform: skewX(-4deg);/*3rd shake measurement to the left*/
+    }
+
+    75% {
+        transform: skewX(4deg);/*4th shake measurement to the right*/
+    }
+
+}
+
+a.a1:hover, a.a2:hover, a.a3:hover, a.a4:hover, a.a5:hover, a.a6:hover, a.a7:hover, a.a8:hover {
+color: yellow;
+box-shadow: 0 5px yellow;
+transform: translateY(2px);
+text-shadow: 2px 2px 2px #000000;   
 }
 
 a.a1{/*Fighting/Martial arts genre*/
@@ -137,7 +169,7 @@ background-attachment: scroll;
 a.a2{/*Battle/Action genre*/
 background-image: url("../images/battle-action.jpg");
 background-size:cover;
-background-position:; /*in case an alignment is needed*/
+/*background-position:; /*in case an alignment is needed*/
 background-repeat: no-repeat;
 background-attachment: scroll;
 }
@@ -145,7 +177,6 @@ background-attachment: scroll;
 a.a3{/*Comedy genre*/
 background-image: url("../images/comedy.jpg");
 background-size:cover;
-background-position:; /*in case an alignment is needed*/
 background-position-y: 20%;
 background-repeat: no-repeat;
 background-attachment: scroll;
@@ -162,7 +193,6 @@ background-attachment: scroll;
 a.a5{/*Sci-Fi/Fantasy genre*/
 background-image: url("../images/sci-fi-fantasy.jpg");
 background-size:cover;
-background-position-x: ;
 background-position-y: 70%; /*to be specific about the part of background image I wish to show*/
 background-repeat: no-repeat;
 background-attachment: scroll;
@@ -171,7 +201,6 @@ background-attachment: scroll;
 a.a6{/*Horro/Supernatural genre*/
 background-image: url("../images/horror-supernatural.jpg");
 background-size:cover;
-background-position-x: ;
 background-position-y: 25%; /*to be specific about the part of background image I wish to show*/
 background-repeat: no-repeat;
 background-attachment: scroll;
@@ -180,7 +209,6 @@ background-attachment: scroll;
 a.a7{/*Drama genre*/
 background-image: url("../images/drama.jpg");
 background-size:cover;
-background-position-x: ;
 background-position-y: 40%; /*to be specific about the part of background image I wish to show*/
 background-repeat: no-repeat;
 background-attachment: scroll;
@@ -189,7 +217,6 @@ background-attachment: scroll;
 a.a8{/*Music genre*/
 background-image: url("../images/music.jpg");
 background-size:cover;
-background-position-x: ;
 background-position-y: 50%; /*to be specific about the part of background image I wish to show*/
 background-repeat: no-repeat;
 }
@@ -198,6 +225,7 @@ section{
 display: flex;
 flex-direction:row; /*aligns elements inside section (articles in this case) as rows as default*/
 flex-wrap: wrap; /*allows articles to maintain its form as the windows size changes*/
+border-radius: 8px;
 }
 
 header{
@@ -206,14 +234,14 @@ position: fixed; /*If I change to sticky, will need to alter width to 100%. Abso
 width: 85%;
 background-color: black;
 padding-bottom: 14px;
-border: /*solid 1px white; in case I want to add a border colour around the header*/ 
+/*border: /*solid 1px white; in case I want to add a border colour around the header*/ 
 }
 
 footer{
 bottom: 0;
 text-align: center;
-position: fixed; /*can remove this if I want footer to remain at bottom and unseen unless I scroll, will need to adjust width to 100% if so*/
-width: 85%; /*will need to change to 100% if position is removed*/
+position: relative; /*can remove this or change to static if I want footer to remain at bottom and unseen unless I scroll, will need to adjust width to 100% if so*/
+width: 100%; /*will need to change to 100% if position is removed or changed to static*/
 background-color: red;
 color: black;
 }
