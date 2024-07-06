@@ -41,9 +41,10 @@ display: inline-block;
 
 nav.intPLinks ul {
 padding: 0;
+/*no need to use display:flex as I'm controlling button spacing with margin-direction:[number]em*/
 list-style-type: none;
 flex: 2;
-display: flex;
+display:block;/*using display:block keeps buttons close together, using display:flex pushes them apart*/
 text-align: center;
 }
 
@@ -82,7 +83,9 @@ font-size: 16px;
 border: none;
 border-radius: 12px;
 cursor: pointer;
-text-shadow: 2px 2px 2px #000000;   
+text-shadow: 2px 2px 2px #000000;
+margin-left: 1.5em;/*controls spacing in desired direction*/
+margin-right: 1.5em;
 }
 
 div.dropdown-links{
@@ -117,17 +120,12 @@ margin-top: 0.5em;
 margin-bottom: 0.5em; /*allows you to create space between articles in the specified direction of margin*/
 margin-left: 0.5em;
 margin-right: 0.5em;
-}
-
-img.dbz, img.ktmd, img.kenganashura, img.bakitgrap{
 border-radius: 8px;
 flex: 200px; /*this is its default size, will shrink along with window to fit space available*/
-}
-
-img.dbz, img.ktmd, img.kenganashura, img.bakitgrap{
-width: 25%;/*images will remain the same size as long as I use a percentage that can be equally divided by the same number of images I have*/
+width: 22%;/*images will remain the same size as long as I use a percentage that can be equally divided by the same number of images I have*/
 height: auto;
 cursor: pointer;
+vertical-align: top;
 }
 
 section{

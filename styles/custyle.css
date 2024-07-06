@@ -29,6 +29,7 @@ text-align: center;
 
 h1.pageheading{
 text-align: center;
+padding-bottom: 20px;
 }
 
 div.dropdown{
@@ -39,9 +40,10 @@ display: inline-block;
 
 nav.intPLinks ul {
 padding: 0;
+/*no need to use display:flex as I'm controlling button spacing with margin-direction:[number]em*/
 list-style-type: none;
 flex: 2;
-display: flex;
+display:block;/*using display:block keeps buttons close together, using display:flex pushes them apart*/
 text-align: center;
 }
 
@@ -77,7 +79,9 @@ font-size: 16px;
 border: none;
 border-radius: 12px;
 cursor: pointer;
-text-shadow: 2px 2px 2px #000000;   
+text-shadow: 2px 2px 2px #000000;
+margin-left: 1.5em;/*controls spacing in desired direction*/
+margin-right: 1.5em;
 }
 
 div.dropdown-links{

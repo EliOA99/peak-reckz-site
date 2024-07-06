@@ -48,9 +48,10 @@ display: inline-block;
 
 nav.intPLinks ul {
 padding: 0;
+/*no need to use display:flex as I'm controlling button spacing with margin-direction:[number]em*/
 list-style-type: none;
 flex: 2;
-display: flex;
+display:block;/*using display:block keeps buttons close together, using display:flex pushes them apart*/
 text-align: center;
 }
 
@@ -89,7 +90,9 @@ font-size: 16px;
 border: none;
 border-radius: 12px;
 cursor: pointer;
-text-shadow: 2px 2px 2px #000000;   
+text-shadow: 2px 2px 2px #000000;
+margin-left: 1.5em;/*controls spacing in desired direction*/
+margin-right: 1.5em;
 }
 
 div.dropdown-links{
@@ -124,7 +127,7 @@ border-radius: 8px;
 flex: 200px; /*this is its default size, will shrink along with window to fit space available, it also keeps things in perfect alignment and size*/
 text-shadow: 2px 2px 2px #000000;   
 background-color: rgb(121, 119, 116);
-padding: 40px 10px;/*used to resize background image allowing enough content to be shown*.
+padding: 40px 10px;/*used to resize background image allowing enough content to be shown.*/
 }
 
 a.a1:active, a.a2:active, a.a3:active, a.a4:active, a.a5:active, a.a6:active, a.a7:active, a.a8:active{
