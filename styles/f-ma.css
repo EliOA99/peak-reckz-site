@@ -33,11 +33,14 @@ text-align: center;
 padding-bottom: 20px;
 }
 
+hr{
+border-color: #22e182; /*colours hr line break*/
+}
+
 div.dropdown{
 position: relative;
 display: inline-block;
 }
-
 
 nav.intPLinks ul {
 padding: 0;
@@ -55,11 +58,6 @@ flex: 1;
 }
 
 nav.intPLinks li a {
-text-decoration: none;
-color: white;
-}
-
-a{
 text-decoration: none;
 color: white;
 }
@@ -108,33 +106,34 @@ background-color: #22e182;
 
 div.dropdown:hover div.dropdown-links{
 display: block;
-border-radius: 8px;
 }
 
-div.dropdown:hover a.dropdbtn{
+div.dropdown:hover a.dropdbtn{/*colours button when hovering with cursor*/
 background-color: rgb(150, 52, 52);
 }
 
-img.dbz, img.ktmd, img.kenganashura, img.bakitgrap{
-margin-top: 0.5em;
-margin-bottom: 0.5em; /*allows you to create space between articles in the specified direction of margin*/
-margin-left: 0.5em;
-margin-right: 0.5em;
+img.dbz, img.ktmd, img.ka, img.bakitg{
+width: 100%;/*images will remain the same size as long as I use a percentage that can be equally divided by the same number of images I have*/
+height: auto;
+border-radius: 8px;
+}
+
+article{
+margin-bottom: 1em;
+margin-right: 1em;
 border-radius: 8px;
 flex: 200px; /*this is its default size, will shrink along with window to fit space available*/
-width: 22%;/*images will remain the same size as long as I use a percentage that can be equally divided by the same number of images I have*/
-height: auto;
-cursor: pointer;
-vertical-align: top;
 }
 
 section{
 display: flex;
 flex-direction:row; /*aligns elements inside section (articles in this case) as rows as default*/
 flex-wrap: wrap; /*allows articles to maintain its form as the windows size changes*/
-margin: auto;/*to center section*/
-background-color: #1822a5;
+margin-bottom: 1em;
+margin-right: 1em;
 border-radius: 8px;
+margin: auto;/*to center section*/
+/* flex:[number]px isn't needed due to article element having it.*/
 }
 
 header{

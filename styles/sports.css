@@ -116,24 +116,27 @@ background-color: rgb(150, 52, 52);
 }
 
 img.hni, img.es21, img.bluelck, img.kb{
-margin-top: 0.5em;
-margin-bottom: 0.5em; /*allows you to create space between articles in the specified direction of margin*/
-margin-left: 0.5em;
-margin-right: 0.5em;
+width: 100%;/*images will remain the same size as long as I use a percentage that can be equally divided by the same number of images I have*/
+height: auto;
+border-radius: 8px;
+}
+
+article{
+margin-bottom: 1em;
+margin-right: 1em;
 border-radius: 8px;
 flex: 200px; /*this is its default size, will shrink along with window to fit space available*/
-width: 22%;/*images will remain the same size as long as I use a percentage that can be equally divided by the same number of images I have*/
-height: auto;
-cursor: pointer;
 }
 
 section{
 display: flex;
 flex-direction:row; /*aligns elements inside section (articles in this case) as rows as default*/
 flex-wrap: wrap; /*allows articles to maintain its form as the windows size changes*/
-margin: auto;/*to center section*/
-background-color: #1822a5;
+margin-bottom: 1em;
+margin-right: 1em;
 border-radius: 8px;
+margin: auto;/*to center section*/
+/* flex:[number]px isn't needed due to article element having it.*/
 }
 
 header{
