@@ -41,6 +41,13 @@ margin-left: 0.5em;
 margin-right: 0.5em;
 }
 
+img.adwn{
+height: auto;
+width:30px;
+position: relative;
+top: -90px;/*allows me to manipulate position in x amount of pixels from chosen direction in element along with their being an alignment set in html*/
+}
+
 div.dropdown{
 position: relative;
 display: inline-block;
@@ -173,6 +180,7 @@ a.a2{/*Battle/Action genre*/
 background-image: url("../images/battle-action.jpg");
 background-size:cover;
 /*background-position:; /*in case an alignment is needed*/
+background-position-y: 60%;
 background-repeat: no-repeat;
 background-attachment: scroll;
 }
@@ -202,6 +210,7 @@ background-attachment: scroll;
 }
 
 a.a6{/*Horro/Supernatural genre*/
+background-image: url("../images/18+.jpg") top right, no-repeat;
 background-image: url("../images/horror-supernatural.jpg");
 background-size:cover;
 background-position-y: 25%; /*to be specific about the part of background image I wish to show*/
@@ -220,7 +229,7 @@ background-attachment: scroll;
 a.a8{/*Music genre*/
 background-image: url("../images/music.jpg");
 background-size:cover;
-background-position-y: 50%; /*to be specific about the part of background image I wish to show*/
+background-position-y: 40%; /*to be specific about the part of background image I wish to show*/
 background-repeat: no-repeat;
 }
 
