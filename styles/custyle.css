@@ -25,6 +25,7 @@ border-radius: 8px;
 main{
 padding: 9rem; /*keeps elements from going under heading*/
 text-align: center;
+display:inline-block;
 }
 
 h1.pageheading{
@@ -116,6 +117,62 @@ position: fixed; /*If I change to sticky, will need to alter width to 100%. Abso
 width: 85%;
 background-color: black;
 }
+
+
+article.wrapper{
+background-color: #74837c;
+color: white;
+padding: 14px;
+font-size: 12px;
+border: none;
+border-radius: 8px;
+text-shadow: 2px 2px 2px #000000;
+margin-left: 1.5em;/*controls spacing in desired direction*/
+margin-right: 1.5em;
+margin: 0 auto;
+max-width: 300px;/*ensures that this is the max width element can go*/
+width: 100%;/*useful being combined with max-width as I want it to be as big as possible whilste not going over the limit specified in max-width*/
+height: auto;
+}
+
+article.wrapper h2{/* calls on chosen tag inside element*/
+margin-bottom: 10px;/*space from elements under the heading*/
+text-align: center;
+text-transform: uppercase;/*transforms text of chosen element to uppercase*/
+}
+
+article.wrapper .input_field { 
+margin-bottom: 4px;/*spaces inbetween the text fields in element*/
+}
+
+article.wrapper 
+    .input_field 
+    input[type="text"], 
+article.wrapper textarea { 
+border: 1px solid #c66666; 
+width: 80%; 
+padding: 4px; /*perfect size, if I go up a few pixels, it overflows and ruins the aesthetic of the fixed footer*/
+}
+
+article.wrapper textarea{
+resize: none;/*stops textbox from being resizeable*/
+height: 80px;/*alters message box size (height)*/
+}
+
+article.wrapper div.btn input[type="submit"] { 
+border: 0px; 
+margin-top: 1px; /*submit buttun distance from elements above*/
+padding: 10px; 
+text-align: center; 
+width: 100%; 
+background: #569a4d; 
+color: #fcfbf7; 
+text-transform: uppercase; 
+letter-spacing: 4px;/*space between letters in specified element text*/ 
+font-weight: bold; /*assigns quality to specified element, turned text bold*/
+border-radius: 20px; 
+cursor: pointer; 
+} 
 
 footer{
 bottom: 0;
