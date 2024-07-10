@@ -103,8 +103,9 @@ div.dropdown-links a:hover {
 background-color: #22e182;
 }
 
-div.dropdown:hover div.dropdown-links{
+div.dropdown:hover div.dropdown-links{/*allows the dropdown function to work*/
 display: block;
+border-radius: 8px;
 }
 
 div.dropdown:hover a.dropdbtn{
@@ -172,13 +173,22 @@ letter-spacing: 4px;/*space between letters in specified element text*/
 font-weight: bold; /*assigns quality to specified element, turned text bold*/
 border-radius: 20px; 
 cursor: pointer; 
-} 
+}
+
+#error_message { 
+margin-bottom: 20px; 
+background: #413a3a; 
+padding: 0px; 
+text-align: center; 
+font-size: 14px; 
+transition: all 0.5s ease; /*fade in transition*/
+}
 
 footer{
 bottom: 0;
 text-align: center;
-position: fixed; /*can remove this if I want footer to remain at bottom and unseen unless I scroll, will need to adjust width to 100% if so*/
-width: 85%; /*will need to change to 100% if position is removed*/
+position: relative; /*can remove this or change to static if I want footer to remain at bottom and unseen unless I scroll, will need to adjust width to 100% if so*/
+width: 100%; /*will need to change to 100% if position is removed or changed to static*/
 background-color: red;
 color: black;
 }

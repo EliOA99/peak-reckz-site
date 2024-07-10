@@ -106,6 +106,7 @@ background-color: #22e182;
 
 div.dropdown:hover div.dropdown-links{
 display: block;
+border-radius: 8px;
 }
 
 div.dropdown:hover a.dropdbtn{/*colours button when hovering with cursor*/
@@ -123,6 +124,7 @@ margin-bottom: 1em;
 margin-right: 1em;
 border-radius: 8px;
 flex: 200px; /*this is its default size, will shrink along with window to fit space available*/
+cursor: pointer;
 }
 
 section{
