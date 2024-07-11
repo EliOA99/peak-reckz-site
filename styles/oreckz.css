@@ -132,15 +132,16 @@ div.dropdown:hover a.dropdbtn{
 background-color: rgb(150, 52, 52);
 }
 
-a.a1, a.a2, a.a3, a.a4, a.a5, a.a6, a.a7, a.a8{
+section a{
 border-radius: 8px;
 flex: 200px; /*this is its default size, will shrink along with window to fit space available, it also keeps things in perfect alignment and size*/
 text-shadow: 2px 2px 2px #000000;   
 background-color: rgb(121, 119, 116);
 padding: 40px 10px;/*used to resize background image allowing enough content to be shown.*/
+box-shadow: 2px 4px gray;
 }
 
-a.a1:active, a.a2:active, a.a3:active, a.a4:active, a.a5:active, a.a6:active, a.a7:active, a.a8:active{
+section a:active{
 animation: shake 0.4s ease-out; /*animation to trigger upon click*/
 }
 
@@ -164,10 +165,9 @@ animation: shake 0.4s ease-out; /*animation to trigger upon click*/
 
 }
 
-a.a1:hover, a.a2:hover, a.a3:hover, a.a4:hover, a.a5:hover, a.a6:hover, a.a7:hover, a.a8:hover, a.pageNav1:hover{
+section a:hover{/*calls the <a> links in section*/
 color: yellow;
 box-shadow: 2px 4px yellow;
-transform: translateY(2px);
 text-shadow: 2px 2px 2px #000000;   
 }
 
@@ -176,7 +176,6 @@ background-image: url("../images/fighting-martial-arts.webp");
 background-size:cover;
 background-position:center; /*in case an alignment is needed*/
 background-repeat: no-repeat;
-background-attachment: scroll;
 }
 
 a.a2{/*Battle/Action genre*/
@@ -185,7 +184,6 @@ background-size:cover;
 /*background-position:; /*in case an alignment is needed*/
 background-position-y: 60%;
 background-repeat: no-repeat;
-background-attachment: scroll;
 }
 
 a.a3{/*Comedy genre*/
@@ -193,7 +191,6 @@ background-image: url("../images/comedy.jpg");
 background-size:cover;
 background-position-y: 20%;
 background-repeat: no-repeat;
-background-attachment: scroll;
 }
 
 a.a4{/*Sports genre*/
@@ -201,7 +198,6 @@ background-image: url("../images/sports.jpg");
 background-size:cover;
 background-position-y: 70%; /*to be specific about the part of background image I wish to show*/
 background-repeat: no-repeat;
-background-attachment: scroll;
 }
 
 a.a5{/*Sci-Fi/Fantasy genre*/
@@ -209,16 +205,13 @@ background-image: url("../images/sci-fi-fantasy.jpg");
 background-size:cover;
 background-position-y: 70%; /*to be specific about the part of background image I wish to show*/
 background-repeat: no-repeat;
-background-attachment: scroll;
 }
 
 a.a6{/*Horro/Supernatural genre*/
-background-image: url("../images/18+.jpg") top right, no-repeat;
 background-image: url("../images/horror-supernatural.jpg");
 background-size:cover;
 background-position-y: 25%; /*to be specific about the part of background image I wish to show*/
 background-repeat: no-repeat;
-background-attachment: scroll;
 display:flex;/*use of display:flex stops content (for example the age rating image logo) from changing element size of which it resides*/
 }
 
@@ -227,7 +220,6 @@ background-image: url("../images/drama.jpg");
 background-size:cover;
 background-position-y: 40%; /*to be specific about the part of background image I wish to show*/
 background-repeat: no-repeat;
-background-attachment: scroll;
 }
 
 a.a8{/*Music genre*/
