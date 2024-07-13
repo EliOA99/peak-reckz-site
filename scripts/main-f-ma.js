@@ -15,6 +15,7 @@ function myFunction4() {
 document.getElementById("myInfo4").classList.toggle("infoHide4");  
 }
 
+//18+ warning for clicking Horror/Supernatural on "Our Reckz" button
 var elems = document.getElementsByClassName('horrs');
 var confirmIt = function (e) {
 if (!confirm('Please be aware that by clicking "okay", you confirm that you are aged 18+')) e.preventDefault();
