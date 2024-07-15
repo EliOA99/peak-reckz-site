@@ -138,7 +138,7 @@ max-width: 500px;
 width:100%;
 height: auto;
 background-color: #1822a5;
-display: inline;/* makes sure relevant heading and paragraph show on the same line*/
+display: inline;
 }
 
 section{
