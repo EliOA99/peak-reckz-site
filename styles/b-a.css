@@ -130,7 +130,7 @@ article{
 margin-bottom: 1em;
 margin-right: 1em;
 border-radius: 8px;
-flex:auto;/*was necessary so that I can display the information about the shows to the side as originally intended*/
+flex:400px;/*was necessary so that I can display the information about the shows to the side as originally intended*/
 }
 
 h1.sr{
@@ -139,12 +139,13 @@ max-width: 500px;
 width:100%;
 }
 
-section article p{
+section article p, section article h4{/*refers to paragraph and heading in relevant path*/
 text-align:start;
 max-width: 500px;
 width:100%;
 height: auto;
 background-color: #1822a5;
+display: inline;/* makes sure relevant heading and paragraph show on the same line*/
 }
 
 section{
