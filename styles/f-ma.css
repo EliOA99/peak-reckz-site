@@ -110,13 +110,23 @@ div.dropdown:hover a.dropdbtn{/*colours button when hovering with cursor*/
 background-color: rgb(150, 52, 52);
 }
 
-section article img{/*no need to call each image through their class this way*/
+img.dbz, img.ka{/*necessary to split image this way into groups as I want them to have their own alignment and features*/
 width: 100%;/*images will go as big as possible and stay capped at the max width next line regardless of fullscreen/halfscreen*/
 max-width: 200px;
 height: auto;
 border-radius: 8px;
 box-shadow: 2px 4px rgb(141, 27, 27);
 float: left;
+cursor: pointer;
+}
+
+img.ktmd, img.bakitg{
+width: 100%;/*images will go as big as possible and stay capped at the max width next line regardless of fullscreen/halfscreen*/
+max-width: 200px;
+height: auto;
+border-radius: 8px;
+box-shadow: 2px 4px rgb(141, 27, 27);
+float: right;
 cursor: pointer;
 }
 
@@ -132,13 +142,32 @@ max-width: 500px;
 width:100%;
 }
 
-section article p, section article h4{/*refers to paragraph and heading in relevant path*/
-text-align:start;
+section article h4{/*refers to paragraph and heading in relevant path*/
+text-align:center;
 max-width: 500px;
 width:100%;
 height: auto;
 background-color: #1822a5;
+}
+
+h4.sri{
 display: inline;
+margin-right: 1rem;
+}
+
+p.sria{
+display: inline;
+}
+
+p.summary{
+text-align:justify;
+max-width: 500px;
+width:100%;
+}
+
+/*This is the only way I can apply css properties to elements named by ID instead of class*/
+#expand1, #expand2, #expand3, #expand4{
+display: none;
 }
 
 section{
