@@ -118,6 +118,7 @@ border-radius: 8px;
 box-shadow: 2px 4px rgb(141, 27, 27);
 float: left;
 cursor: pointer;
+margin-right: 1rem;/*for space between picture and text(s)*/
 }
 
 img.ktmd, img.bakitg{
@@ -128,6 +129,7 @@ border-radius: 8px;
 box-shadow: 2px 4px rgb(141, 27, 27);
 float: right;
 cursor: pointer;
+margin-left: 1rem;/*for space between picture and text(s)*/
 }
 
 article{
@@ -142,7 +144,7 @@ max-width: 500px;
 width:100%;
 }
 
-section article h4{/*refers to paragraph and heading in relevant path*/
+section article h4{/*refers to heading in relevant path*/
 text-align:center;
 max-width: 500px;
 width:100%;
@@ -150,13 +152,16 @@ height: auto;
 background-color: #1822a5;
 }
 
-h4.sri{
-display: inline;
-margin-right: 1rem;
+section article p.infol{
+text-align:start;
 }
 
-p.sria{
-display: inline;
+section article p.infor{
+text-align:end;
+}
+
+div.secbr{/*to create space where intended*/
+margin-bottom: 1rem;
 }
 
 p.summary{
