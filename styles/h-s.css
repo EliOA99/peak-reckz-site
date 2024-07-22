@@ -202,10 +202,10 @@ padding-bottom: 14px;
 footer{
 bottom: 0;
 text-align: center;
-position: relative; /*can remove this or change to static if I want footer to remain at bottom and unseen unless I scroll, will need to adjust width to 100% if so*/
-width: 100%; /*will need to change to 100% if position is removed or changed to static*/
+width: 100%; /*will need to change to 100% if position is removed*/
 background-color: red;
 color: black;
+margin-top: -6rem;/*used to bring footer up to save scroll space*/
 }
 
 header, footer{

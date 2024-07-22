@@ -33,6 +33,25 @@ text-align: center;
 padding-bottom: 20px;
 }
 
+div.secbr{/*to create space where intended*/
+margin-bottom: 1rem;
+}
+
+#BTTBtn{
+display: none;
+position: sticky;
+bottom:150px;
+float: right;
+border: none;
+cursor: pointer;
+padding: 12px;
+background: gray;
+color: white;
+}
+
+#BTTBtn:hover{
+background-color: black;
+}
 
 a.a1, a.a2, a.a3, a.a4, a.a5, a.a6, a.a7, a.a8{
 margin-top: 0.5em;

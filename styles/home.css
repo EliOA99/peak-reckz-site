@@ -28,6 +28,14 @@ text-align: center;
 display: inline-block;
 }
 
+main p, main strong{
+text-align: justify;
+}
+
+div.secbr{/*to create space where intended*/
+margin-bottom: 1rem;
+}
+
 h1.pageheading{
 text-align: center;
 padding-bottom: 20px;
@@ -77,6 +85,11 @@ flex: 1;
 nav.intPLinks li a {
 text-decoration: none;
 color: white;
+}
+
+a{
+text-decoration: underline;
+color: inherit;/*takes the colour which the page is using*/
 }
 
 nav.extPLinks ul {
