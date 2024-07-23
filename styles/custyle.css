@@ -28,6 +28,43 @@ text-align: center;
 display:inline-block;
 }
 
+div.secbr{
+margin-right: 0.5em;
+}
+
+section{
+display: flex;
+flex-direction:row; /*aligns elements inside section (articles in this case) as rows as default*/
+flex-wrap: wrap; /*allows articles to maintain its form as the windows size changes*/
+margin: 0 auto;
+}
+
+p.cuf{
+max-width: 200px;
+margin:auto;
+margin-bottom: 1em;
+}
+
+article{
+flex: 200px; /*this is its default size, will shrink along with window to fit space available*/
+}
+
+div.faq{/*container for FAQ Info*/
+max-width: 200px;
+width:100%;
+margin: auto;
+height: 180px;
+}
+
+div.faqbx{
+margin-top: 1em;
+color: white;
+}
+
+div.faq p{
+text-align: center;
+}
+
 h1.pageheading{
 text-align: center;
 padding-bottom: 20px;
@@ -189,7 +226,6 @@ bottom: 0;
 text-align: center;
 width: 100%; /*will need to change to 100% if position is removed*/
 background-color: red;
-color: black;
 margin-top: -6rem;/*used to bring footer up to save scroll space*/
 }
 
