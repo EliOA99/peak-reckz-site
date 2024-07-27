@@ -1,25 +1,18 @@
 html {
 font-size: 14px; /* px means "pixels": the base font size is now 10 pixels high */
 font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google Fonts */
-background-color: blueviolet;
-background-color:rgb(0, 0, 0);
-background-image: url("../images/bg1.jpg");
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-background-attachment: fixed;
+background-color:#1B2936;
 }
 
 body {
-border: 1px solid black;/*may need to remove, makes noticeable space near dropdown icon if there's no header border colour*/
 margin: auto;
 max-width: 85%;
 min-height: 100vh;
 display: flex;
 flex-direction: column;
-background-color: black;
+background-color: #223344;
+color: #92ADC9;
 border-radius: 8px; /*rounds edges*/
-color: white;
 }
 
 main{
@@ -28,8 +21,27 @@ text-align: center;
 display: inline-block;
 }
 
+img.slogo{
+width:100px;
+height: auto;
+border-radius: 8px;
+display: inline;
+float: left;
+margin-top: 0.5rem;
+margin-left: 0.5rem;
+padding: 0;
+}
+
 main p, main strong{
 text-align: justify;
+}
+
+strong.av, strong.mv{
+background-color: #1B2936;
+max-width: 420px;
+width:100%;
+display: inline-block;/*allows style change to apply to whole element*/
+text-align: center;
 }
 
 div.secbr{/*to create space where intended*/
@@ -51,6 +63,7 @@ flex: auto; /*this is its default size, will shrink along with window to fit spa
 
 iframe{
 border-radius: 8px;
+border:none
 }
 
 div.dropdown{
@@ -76,7 +89,6 @@ flex: 1;
 
 nav.intPLinks li a {
 text-decoration: none;
-color: white;
 }
 
 a{
@@ -93,10 +105,11 @@ flex: 2;
 img.fbLogo, img.igLogo, img.xLogo, img.tiktokLogo{
 height: 30px;
 width:30px;
+border-radius: 8px;
 }
 
 a.dropdbtn, a.pageNav1, a.pageNav2, a.pageNav3 {
-background-color: #74837c;
+background-color: #1B2936;
 color: white;
 padding: 10px;
 font-size: 16px;
@@ -111,30 +124,27 @@ margin-right: 1.5em;
 div.dropdown-links{
 display:none;
 position: absolute;
-background-color: #1822a5;
- min-width: 160px;
+background-color: #92ADC9;
+min-width: 160px;
 }
 
 div.dropdown-links a{
-color: rgb(150, 19, 19);
 padding: 12px 16px;
 text-decoration: none;
 display:block;
+font-weight: bold;
+color:#223344;
 }
 
 div.dropdown-links a:hover {
-background-color: #22e182;
+background-color: #223344;
+color:#92ADC9;
 }
 
 div.dropdown:hover div.dropdown-links{
 display: block;
 border-radius: 8px;
 }
-
-div.dropdown:hover a.dropdbtn{/*colours button when hovering with cursor*/
-background-color: rgb(150, 52, 52);
-}
-
 
 section{
 display: flex;
@@ -146,7 +156,6 @@ header{
 top: 0;
 position: fixed; /*If I change to sticky, will need to alter width to 100%. Absolute is fine on its own.*/
 width: 85%;
-background-color: black;
 padding-bottom: 14px;
 /*border: /*solid 1px white; in case I want to add a border colour around the header*/
 }
@@ -156,10 +165,9 @@ bottom: 0;
 text-align: center;
 position: fixed; /* footer will remain in view with fixed position as I scroll. Can remove this or change to static or relative if I want footer to remain at the end of page and unseen, will need to adjust width to 100% if so*/
 width: 85%; /*will need to change to 100% if position is removed. Not needed if position is "relative" or "static"*/
-background-color: red;
-color: black;
 }
 
 header, footer{
 border-radius: 8px;
+background-color: #1B2936;
 }
