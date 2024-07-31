@@ -71,7 +71,6 @@ position: relative;
 display: inline-block;
 }
 
-
 nav.intPLinks ul {
 padding: 0;
 /*no need to use display:flex as I'm controlling button spacing with margin-direction:[number]em*/
