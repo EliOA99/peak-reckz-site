@@ -17,8 +17,12 @@ border-radius: 8px; /*rounds edges*/
 
 main{
 padding: 9rem; /*keeps elements from going under heading*/
-text-align: justify;
+text-align: center;
 display: inline-block;
+}
+
+main p{
+text-align: justify;
 }
 
 img.slogo{
@@ -35,6 +39,10 @@ padding: 0;
 h2.pageheading{
 text-align: center;
 padding-bottom: 20px;
+}
+
+h3.seriesHeading{
+text-align: center;
 }
 
 div.secbr{/*to create space where intended*/
@@ -252,7 +260,7 @@ background-repeat: no-repeat;
 }
 
 section{
-display: flex;
+display:inline-flex;
 flex-direction:row; /*aligns elements inside section (articles in this case) as rows as default*/
 flex-wrap: wrap; /*allows articles to maintain its form as the windows size changes*/
 border-radius: 8px;
